@@ -1,4 +1,4 @@
-package com.inventory.customer;
+package com.inventory.services;
 
 public interface ICustomerService {
 	

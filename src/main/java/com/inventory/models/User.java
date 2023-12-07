@@ -1,4 +1,4 @@
-package com.inventory.customer;
+package com.inventory.models;
 
 import java.util.Date;
 import java.util.Objects;
@@ -26,7 +26,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Customer {
+public class User {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -52,7 +52,7 @@ public class Customer {
 	@LastModifiedDate
 	private Date updatedAt;
 	
-	public Customer(Long id, String firstName, String lastName, String email, String contact, Integer idNumber) {
+	public User(Long id, String firstName, String lastName, String email, String contact, Integer idNumber) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -67,8 +67,8 @@ public class Customer {
 	  Class<?> oEffectiveClass = o instanceof HibernateProxy ? ((HibernateProxy) o).getHibernateLazyInitializer().getPersistentClass() : o.getClass(); 
 	  Class<?> thisEffectiveClass = this instanceof HibernateProxy ? ((HibernateProxy) this).getHibernateLazyInitializer().getPersistentClass() : this.getClass(); 
 	  if (thisEffectiveClass != oEffectiveClass) return false; 
-	  Customer customer = (Customer) o; 
-	  return getId() != null && Objects.equals(getId(), customer.getId()); 
+	  User user = (User) o; 
+	  return getId() != null && Objects.equals(getId(), user.getId()); 
 	} 
 	 
 	@Override 
