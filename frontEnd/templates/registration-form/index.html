@@ -4,10 +4,60 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Welcome | Registration Page</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="min-h-screen py-40" style="background-image: url(./background-image.jpg);">
+      <div class="container mx-auto">
+        <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+          <div class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center" style="background-image: url(./background-image.jpg);">
+            <h1 class="text-white text-3xl mb-3">Why <bold>ZenVentory?</bold></h1>
+            <div>
+              <ol class="text-white">
+                <li>1. Effortless Organization</li>
+                <li>2. Real-Time Insights</li>
+                <li>3. Adaptable to Your Needs</li>
+                <li>4. Automated Efficiency</li>
+              </ol>
+            </div>
+            <div>
+              <a href="#" class="text-purple-500 font-semibold">Learn More</a>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 py-16 px-12 ">
+            <h2 class="text-3xl mb-4">Sign Up, Now!</h2>
+            <p class="mb-4">
+              Create your account. It's free and only takes a minute
+            </p>
+            <form action="#">
+              <div class="grid grid-cols-2 gap-5">
+                <input type="text" placeholder="Firstname" class="border border-gray-400 py-1 px-2">
+                <input type="text" placeholder="Surname" class="border border-gray-400 py-1 px-2">
+              </div>
+              <div class="mt-5">
+                <input type="text" placeholder="Email" class="border border-gray-400 py-1 px-2 w-full">
+              </div>
+              <div class="mt-5">
+                <input type="password" placeholder="Password" class="border border-gray-400 py-1 px-2 w-full">
+              </div>
+              <div class="mt-5">
+                <input type="password" placeholder="Confirm Password" class="border border-gray-400 py-1 px-2 w-full">
+              </div>
+              <div class="mt-5">
+                <input type="checkbox" class="border border-gray-400">
+                <span>
+                  I accept the <a href="#" class="text-purple-500 font-semibold">Terms of Use</a> & <a href="#" class="text-purple-500 font-semibold">Privacy Policy</a>
+                </span>
+              </div>
+              <div class="mt-5">
+                <button class="w-full bg-purple-500 py-3 text-center text-white">Register Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
