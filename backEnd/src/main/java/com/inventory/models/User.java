@@ -41,8 +41,17 @@ public class User {
 	@Column(name = "email", nullable = false, updatable = true, unique = true)
 	private String email;
 	
+	@Column(name = "password", nullable = false, updatable = true, unique = false)
+	private String password;
+	
 	@Column(name = "contact", nullable = false, updatable = true, unique = true)
 	private String contact;
+	
+	@Column(name = "role", nullable = false)
+	private String role;
+	
+	@Column(name = "is_enabled", nullable = false)
+	private boolean isEnabled = false;
 
 	@Column(nullable = false, updatable = false)
 	@CreatedDate

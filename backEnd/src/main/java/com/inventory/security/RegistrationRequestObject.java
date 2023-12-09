@@ -1,20 +1,18 @@
-package com.inventory.security;
+package com.inventory.objects;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
-public class RegistrationRequestObject { 
+@Data
+public class RegistrationRequest { 
 	
 	private String firstName;
 	private String lastName;
 	private String email;
 	private String contact;
 	private String password;	
-	
+	private String role;
 }
